@@ -2,7 +2,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: `${__dirname}/app/index.html`,
+    template: `${__dirname}/router-demo/demo01/index.html`,
     filename: 'index.html',
     inject: 'body',
 });
@@ -10,7 +10,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
     // 档案起始点从 entry 进入，因为是阵列所以也可以是多个档案
     entry: [
-        './router-demo/index.js',
+        './router-demo/demo01/index.js',
     ],
     // output 是放入产生出来的结果的相关参数
     output: {
